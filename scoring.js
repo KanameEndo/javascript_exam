@@ -93,7 +93,7 @@ $(document).ready(function () {
   // ２回目以降に「最終ジャッジ」ボタンを押した際は、それまでに表示していたジャッジのHTML要素を削除して、新たなジャッジのHTML要素を追加する。
   // ヒント：removeメソッドについて調べてみましょう。
   $('#btn-declaration').click(function () {
-    $("alert-indicate").remove();
-        $("#btn-declaration").text(judgement);
+    $("#alert-indicate").remove();
+        $("#declaration").text(judgement());
   });
 });
